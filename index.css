@@ -111,7 +111,7 @@
   }
   .anime1{
     flex: 70%;
-    overflow:auto;
+    overflow:hidden;
     white-space: nowrap;
   }
   .anime2{
@@ -126,7 +126,7 @@
 }
 .fanart1{
   flex: 70%;
-  overflow:auto;
+  overflow:hidden;
   white-space: nowrap;
 
 }
@@ -143,7 +143,7 @@
 }
 .oc1{
 flex: 70%;
-overflow :auto;
+overflow :hidden;
 white-space: nowrap;
 }
 .oc2{

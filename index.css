@@ -8,8 +8,7 @@
   html,body
 {
     overflow-x: hidden; 
-}
-  
+}  
   .exclusionzone{
     top:0%;
     display:flex;
@@ -27,15 +26,20 @@
   }
   .navbar a {
     color: black;
-    width: 10%;
+    width: 8%;
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
   }
+  .navbar b{
+    width:72%;
+    background-color: white;
+    color: white;
+  }
   .navbar a:hover{
     color:blue;
-
   }
+
 
 .popup {
     display:flex;
@@ -91,18 +95,78 @@
     border: none;
   }
 
+.tdark{
+  display:flex;
+  flex-direction:column;
+  background-color:white;     
+}
+.tdhead{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height:130px;
+  background-color: #00bd72;
+}
+.tdhead a{
+  text-align: center;font-size: 70px;margin-top: 10px;
+}
+.aboutme{
+  background-color: white;
+  display: flex;
+}
+.amphoto{
+  flex:25%;
+  margin-top: 60px;
+  margin-left: 90px;
+}
+.amintro{
+  display: flex;
+  flex-direction: column;
+  flex: 75%;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.amicon{
+  display: flex;
+}
+.amicon b{
+  flex: 50%;
+}
+.whnwhr{
+  margin-left: 20px;margin-top: 60px;
+}
+.whnwhr b{
+  font-size: 40px;
+}
+.whnwhr c{
+  font-size: 20px;
+}
+
+.interests{
+  display: flex;
+  flex-direction: column;
+}
+.amintro a{
+  font-size: 20px;margin-right: 60px;margin-top: 40px;
+}
+
 
 
   .art{
       display:flex;
       flex-direction:column;
-      background-color:white;     
+      background-color:white;  
+      margin-top: 40px;   
   }
-  .artheading{
-    height:180px;
-    background-color: #FF2E71;
-    width:100%;
-    display:flex;
+  .arthead{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height:130px;
+    background-color: #f80043;
+  }
+  .arthead b a{
+    padding:0px 5px;
   }
   .main{
       display:flex;
@@ -115,7 +179,7 @@
   }
   .anime1{
     flex: 70%;
-    overflow:hidden;
+    overflow:auto;
     white-space: nowrap;
   }
   .anime2{
@@ -130,7 +194,7 @@
 }
 .fanart1{
   flex: 70%;
-  overflow:hidden;
+  overflow:auto;
   white-space: nowrap;
 
 }
@@ -147,7 +211,7 @@
 }
 .oc1{
 flex: 70%;
-overflow :hidden;
+overflow :auto;
 white-space: nowrap;
 }
 .oc2{
@@ -157,63 +221,54 @@ margin-left:20px;
 }
 
 
-.career{
-  display:flex;
-  flex-direction:column;
-  background-color:white;     
-}
-.careerheading{
-height:180px;
-background-color: #FF2E71;
-width:100%;
-display:flex;
-}
-.education{
-  display:flex;
+.careerhead{
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  height:130px;
+  background-color: #08bdff;
 }
-.edhead{
-  font-size: 40px;
-  margin-left:20px;
-  margin-top:20px;
+.careerhead b a{
+  padding:0px 5px;
 }
-.edcont{
+
+.eds{
   display:flex;
-  flex-direction: row;
-  width:100%;
-  margin-left: 20px;
+  width: 100%;
   margin-right: 20px;
+  margin-left: 20px;
+  overflow: hidden;
 }
-.sec{
+.eds a{
+  height:240px;
   flex:30%;
-  text-align: left;
+  background-color:#66e1ff;
+  padding:20px 20px 20px 20px;
 }
-.sensec{
-  flex:30%;
-  text-align: left;
+.eds b{
+  flex:10%;
 }
-.eng{
-  flex:30%;
-  text-align: left;
-
-}
-.empty{
-  flex:5%;
+.eds a:hover{
+  background-color: #66bdff;
 }
 
-
+.sks{
+  display:flex;
+}
 .skillcont{
   margin-top: 15px;
+  flex: 50%;
 }
 .skillcont a{
   font-size: 20px;
   margin-left: 60px;
 }
 
+
+
 .button1{
-  background-color:#66bdff;
-  border: none;
-  color: white;
+  background-color:#66e1ff;
+  color: black;
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -221,26 +276,13 @@ display:flex;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 12px; 
+  border-radius: 20px; 
   width:300px;
-  margin-left:450px;
+  border-style: solid;
+  border-color: black;
 }
 
-.button2{
-  background-color:#66bdff;
-  border: none;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px; 
-  width:300px;
-  margin-left:450px;
-}
+
 
 .social{
   display:flex;
@@ -343,26 +385,43 @@ display:flex;
 
 
 @media only screen and (max-width: 1024px){
-  .exclusionzone{
-    height:158px;
-  }
-  .navbar{
-    flex-direction:column;
-    width: 100%;
-    height: 160px;
-    position: absolute;
-  }
-  .navbar a{
-    width: 100%;
-    text-align: center;
-  }
+
+.navbar b{
+  width: 0%;
+}
+.navbar a{
+  width: 25%;
+}
+
+.tdhead a{
+  font-size: 60px;
+}
+.aboutme{
+  flex-direction: column;
+}
+.amintro a{
+  font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .anime{
     flex-direction:column-reverse;
     height:400px;
   }
-  
-
 
   .fanarts{
     flex-direction: column;
@@ -372,26 +431,37 @@ display:flex;
     flex-direction: column-reverse;
     height:400px;
   }
-  .edcont{
+
+  .eds{
     flex-direction: column;
   }
+  .eds a{
+    margin-top: 5px;
+  }
+  .prs k{
+    flex-direction: column;
+  }
+  .amintro{
+    margin-top: 0px;
+  }
+  .whnwhr{
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+
+
+
   .button1{
     margin-left:20px;
   }
   .button2{
     margin-left: 20px;
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
